@@ -26,6 +26,6 @@ jobs:
 
     - name: Build with Maven
       run: mvn deploy -B
-
+      working-directory: GameToolsLib
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
